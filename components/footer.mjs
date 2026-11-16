@@ -2,7 +2,7 @@ import {route} from './navigation.mjs';
 
 const homepage = 'https://crepmc.github.io/';
 const profile = 'https://github.com/CrepMC';
-const contactEmail = 'ducnhan02022009@gmail.com';
+const contactEmail = 'nhan069069@stu.vinschool.edu.vn';
 
 export function footer(ctx) {
   const projectLink = ctx.path === 'index.html' || ctx.path === 'Home/index.html'
