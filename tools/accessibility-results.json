@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-16T11:50:21.729Z",
+  "checkedAt": "2026-11-16T12:47:42.406Z",
   "standard": "Automated axe WCAG 2.0/2.1 A and AA checks",
   "pages": [
     {
       "path": "index.html",
-      "passedRules": 26,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": [
         "color-contrast",
@@ -13,7 +13,7 @@
     },
     {
       "path": "Home/index.html",
-      "passedRules": 26,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": [
         "color-contrast",
@@ -22,7 +22,7 @@
     },
     {
       "path": "First semester/index.html",
-      "passedRules": 22,
+      "passedRules": 24,
       "violations": 0,
       "incompleteRules": [
         "color-contrast",
@@ -31,7 +31,7 @@
     },
     {
       "path": "Second semester/index.html",
-      "passedRules": 22,
+      "passedRules": 24,
       "violations": 0,
       "incompleteRules": [
         "color-contrast",
@@ -46,13 +46,13 @@
     },
     {
       "path": "First semester/Book-2-1/index.html",
-      "passedRules": 27,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": []
     },
     {
       "path": "First semester/Book-3-1/index.html",
-      "passedRules": 27,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": []
     },
@@ -64,7 +64,7 @@
     },
     {
       "path": "First semester/Book-5-1/index.html",
-      "passedRules": 28,
+      "passedRules": 26,
       "violations": 0,
       "incompleteRules": []
     },
@@ -82,7 +82,7 @@
     },
     {
       "path": "First semester/Book-8-1/index.html",
-      "passedRules": 29,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": [
         "color-contrast"
@@ -110,7 +110,7 @@
     },
     {
       "path": "Second semester/Book-4-2/index.html",
-      "passedRules": 27,
+      "passedRules": 28,
       "violations": 0,
       "incompleteRules": [
         "color-contrast"

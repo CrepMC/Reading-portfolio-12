@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
-import assert from 'node:assert/strict';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {readings} from './readings.mjs';
 
@@ -23,6 +22,11 @@ const textContent=node=>node.nodeName==='#text'?node.value:(node.childNodes||[])
 const normalized=t=>t.replace(/\s+/g,' ').trim();
 const getClass=(nodes,cls)=>nodes.filter(n=>(attr(n,'class')||'').split(' ').includes(cls));
 const rootIds=[];
+const externalFooterLinks = [
+  'https://crepmc.github.io/',
+  'https://github.com/CrepMC',
+  'mailto:ducnhan02022009@gmail.com',
+];
 
 for(const file of pages){
   const html=fs.readFileSync(path.join(root,file),'utf8');
@@ -46,16 +50,30 @@ for(const file of pages){
   rootIds.push(attr(pageRoot,'id'));
   for(const node of nodes.filter(n=>n.tagName==='a')){
     const href=attr(node,'href');
-    if(href.startsWith('#'))check(ids.includes(href.slice(1)),`${file}: missing anchor ${href}`);
-    else check(fs.existsSync(path.resolve(root,path.dirname(file),decodeURIComponent(href))),`${file}: broken route ${href}`);
+    if(externalFooterLinks.includes(href)) continue;
+    const [destination, anchor] = href.split('#');
+    const target = path.resolve(root,path.dirname(file),decodeURIComponent(destination || path.basename(file)));
+    const exists = fs.existsSync(target);
+    check(exists, `${file}: broken route ${href}`);
+    if(exists && anchor) {
+      const targetNodes = destination ? allNodes(parse(fs.readFileSync(target,'utf8'))) : nodes;
+      check(targetNodes.some(item => attr(item,'id') === decodeURIComponent(anchor)), `${file}: missing anchor ${href}`);
+    }
   }
-  for(const node of embedded.filter(n=>n.tagName==='a'))check(attr(node,'href').startsWith('#'),`${file}: local-only navigation escaped into embed`);
+  for(const node of embedded.filter(n=>n.tagName==='a')) {
+    const href = attr(node,'href');
+    check(href.startsWith('#') ? embedIds.includes(href.slice(1)) : externalFooterLinks.includes(href), `${file}: invalid embed link ${href}`);
+  }
   check(!/<(?:html|head|body)\b|<!doctype|```/i.test(fragment),`${file}: embed contains document shell or fence`);
   for(const tree of [nodes,embedded]){
     for(const node of tree.filter(n=>n.tagName==='script')){try{new vm.Script(textContent(node));checks++;}catch(e){check(false,`${file}: JS syntax ${e.message}`);}}
     check(!tree.some(n=>attr(n,'src')||n.tagName==='link'),`${file}: runtime asset dependency`);
+    const footer = getClass(tree,'site-footer');
+    check(footer.length === 1, `${file}: exactly one shared footer`);
+    const links = footer.flatMap(allNodes).filter(node => node.tagName === 'a').map(node => attr(node,'href'));
+    check(externalFooterLinks.every(href => links.includes(href)), `${file}: footer contact and profile links`);
   }
-  for(const cls of ['summary-text','evidence-item','lab','vocab-card','quiz-question','reflection-question','source-copy']){
+  for(const cls of ['summary-text','evidence-item','lab','vocab-card','written-response','source-copy','site-footer']){
     check(JSON.stringify(getClass(nodes,cls).map(n=>normalized(textContent(n))))===JSON.stringify(getClass(embedded,cls).map(n=>normalized(textContent(n)))),`${file}: standalone/embed content differs in ${cls}`);
   }
 }
@@ -90,6 +108,7 @@ await page.locator('[data-reading-row]:visible h3 a').click();
 check(page.url()===`${base}/Second%20semester/Book-7-2/index.html`,'Root entry: opens a reading by a relative URL');
 await page.getByRole('link',{name:'Home',exact:true}).first().click();
 check(page.url()===`${base}/index.html`,'Reading navigation returns to the root entry');
+check(await page.locator('.site-footer h2').allTextContents().then(labels => labels.join(', ') === 'Contact, Legal, Updates, Pages'),'Root entry: shared footer sections');
 results.checks.push('Root index.html opens offline and at all three widths, with catalog search and navigation under the configured base path');
 for(const width of results.viewports){
   await page.setViewportSize({width,height:1000});
@@ -126,18 +145,9 @@ results.checks.push('Home combined search/semester/theme filters, empty state, d
 
 for(const r of readings){
   await page.goto(`${base}/${r.path.split('/').map(encodeURIComponent).join('/')}`);
-  const fieldsets=page.locator('[data-question]');
-  for(let i=0;i<r.quiz.length;i++)await fieldsets.nth(i).locator(`input[value="${r.quiz[i][2]}"]`).check();
-  await page.locator('[data-check-quiz]').click();
-  check((await page.locator('[data-quiz-result]').innerText()).startsWith(`${r.quiz.length} of ${r.quiz.length} correct`),`${r.id}: all correct quiz`);
-  await page.locator('[data-retry-quiz]').click();
-  check(await page.locator('[data-question] input:checked').count()===0,`${r.id}: retry clears choices`);
-  await page.locator('[data-check-quiz]').click();
-  check((await page.locator('[data-quiz-result]').innerText()).startsWith('0 of'),`${r.id}: incomplete answers handled`);
-  for(let i=0;i<r.quiz.length;i++)await fieldsets.nth(i).locator(`input[value="${(r.quiz[i][2]+1)%3}"]`).check();
-  await page.locator('[data-check-quiz]').click();
-  check((await page.locator('[data-quiz-result]').innerText()).startsWith(`0 of ${r.quiz.length} correct`),`${r.id}: wrong answers scored`);
-  check(await page.locator('.quiz-feedback[data-correct="false"]').count()===r.quiz.length,`${r.id}: answer-specific feedback`);
+  check(await page.locator('.written-response').innerText() === r.reflection,`${r.id}: shows its written response`);
+  check(await page.locator('textarea, [data-quiz], [data-save-note]').count()===0,`${r.id}: retired quiz and note form are absent`);
+  check(await page.getByRole('heading',{name:'Reading check',exact:true}).count()===0,`${r.id}: retired quiz heading is absent`);
   const card=page.locator('.vocab-card').first();
   await card.locator('summary').click();
   check(await card.getAttribute('open')!==null,`${r.id}: vocabulary opens`);
@@ -176,16 +186,16 @@ for(const r of readings){
     check(await page.locator('.turning-point').getAttribute('open')!==null,'Thanksgiving: turning point opens');
   }
 }
-results.checks.push('All 15 quizzes: correct, incorrect, unanswered and retry; every vocabulary deck; all custom activity selectors, sorters and unique controls');
+results.checks.push('All 15 written responses, shared footers, vocabulary decks and existing interactive learning activities');
 console.log('All reading interactions checked. Testing file access and embeds.');
 
 await page.goto(`${base}/${encodeURIComponent('First semester')}/Book-1-1/index.html`);
-await page.locator('[data-reflection]').fill('Test response: a claim supported by evidence.');
-await page.locator('[data-save-note]').click();
-await page.reload();
-check(await page.locator('[data-reflection]').inputValue()==='Test response: a claim supported by evidence.','Saved reflection restored');
-await page.locator('[data-select-note]').click();
-check(await page.locator('[data-reflection]').evaluate(el=>el.selectionStart===0&&el.selectionEnd===el.value.length),'Select-to-copy fallback');
+await page.getByRole('navigation',{name:'Footer pages'}).getByRole('link',{name:'About this project'}).click();
+check(page.url()===`${base}/index.html#about-project`,'Footer About link works under the repository base path');
+await page.locator('.site-footer').screenshot({path:path.join(qaDir,'reading-footer-desktop.png')});
+await page.setViewportSize({width:360,height:900});
+await page.locator('.site-footer').screenshot({path:path.join(qaDir,'reading-footer-mobile.png')});
+await page.setViewportSize({width:1440,height:1000});
 await page.screenshot({path:path.join(qaDir,'reading-desktop.png'),fullPage:true});
 for(const file of pages){
   await page.goto(pathToFileURL(path.join(root,file)).href);
@@ -194,7 +204,7 @@ for(const file of pages){
 await page.goto(pathToFileURL(path.join(root,'Home/index.html')).href);
 await page.getByRole('link',{name:'First semester',exact:true}).click();
 check(page.url().includes('First%20semester'),'file protocol relative navigation with spaces');
-results.checks.push('All 18 pages open with file://; relative file navigation; reflection save/reload and selection fallback');
+results.checks.push('All pages open with file:// and support relative file navigation');
 
 for(const file of pages){
   const fragment=fs.readFileSync(path.join(root,path.dirname(file),'embed.txt'),'utf8');
@@ -205,19 +215,15 @@ for(const file of pages){
   await frame.locator('[data-initialized="true"]').waitFor();
   check(await frame.locator('h1').isVisible(),`${file}: sandbox embed initialized`);
   check(await page.locator('#host').innerText()==='Host content remains intact',`${file}: host untouched`);
-  check(await frame.locator('a:not([href^="#"])').count()===0,`${file}: no embed filesystem links`);
+  const footerLinks = await frame.locator('.site-footer a').evaluateAll(links => links.map(link => link.getAttribute('href')));
+  check(externalFooterLinks.every(href => footerLinks.includes(href)),`${file}: sandbox footer links`);
   const r=readings.find(r=>r.path===file);
   if(r){
-    await frame.locator('[data-reflection]').fill('Unsaved sandbox response.');
-    await frame.locator('[data-save-note]').click();
-    check((await frame.locator('[data-note-status]').innerText()).includes('Saving is unavailable'),`${r.id}: storage denied fallback`);
-    check(await frame.locator('[data-reflection]').inputValue()==='Unsaved sandbox response.',`${r.id}: denied storage preserves text`);
-    for(let i=0;i<r.quiz.length;i++)await frame.locator('[data-question]').nth(i).locator(`input[value="${r.quiz[i][2]}"]`).check();
-    await frame.locator('[data-check-quiz]').click();
-    check((await frame.locator('[data-quiz-result]').innerText()).startsWith(`${r.quiz.length} of ${r.quiz.length} correct`),`${r.id}: quiz in sandbox`);
+    check(await frame.locator('.written-response').innerText()===r.reflection,`${r.id}: written response in sandbox`);
+    check(await frame.locator('textarea, [data-quiz], [data-save-note]').count()===0,`${r.id}: retired controls are absent from embed`);
   }
 }
-results.checks.push('All 18 fragments in isolated sandbox=allow-scripts iframes; all 15 embed quizzes and storage-denied fallback; host preserved');
+results.checks.push('All 18 fragments in isolated sandbox iframes, including written responses and footer links');
 
 const noJs=await browser.newContext({javaScriptEnabled:false,viewport:{width:360,height:900}});
 const plain=await noJs.newPage();
@@ -226,6 +232,7 @@ for(const file of pages){
   check(await plain.locator('h1').isVisible(),`${file}: no-JS heading`);
   if(file.includes('Book-')){
     check(await plain.locator('.summary-text').isVisible(),`${file}: no-JS summary`);
+    check(await plain.locator('.written-response').isVisible(),`${file}: no-JS written response`);
     for(const panel of await plain.locator('[data-panel]').all())check(await panel.isVisible(),`${file}: no-JS activity explanations`);
     await plain.locator('.vocab-card summary').first().click();
     check(await plain.locator('.vocab-card[open]').count()===1,`${file}: native flashcard without JS`);

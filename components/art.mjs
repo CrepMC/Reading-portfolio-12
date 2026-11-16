@@ -1,4 +1,4 @@
-import {esc} from './labs.mjs';
+import {esc} from './markup.mjs';
 const line = (x1,y1,x2,y2) => `<path d="M${x1} ${y1}L${x2} ${y2}"/>`;
 export function artwork(kind, label='An illustrative reading motif') {
   let shape='';

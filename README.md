@@ -8,8 +8,7 @@ Mở [index.html](index.html) ở gốc để xem website. Có **19 file HTML ho
 
 1. Mở `index.html` ở gốc bằng trình duyệt, kể cả khi không có mạng.
 2. Chọn học kỳ hoặc tìm theo tiêu đề, tác giả, chủ đề. Các bộ lọc kết hợp với nhau; tìm `tet` cũng tìm được `Tết`.
-3. Trong từng bài, dùng mục lục để đến phần tóm tắt, phân tích, hoạt động, từ vựng, quiz, reflection và nguồn.
-4. Quiz chỉ là luyện tập. Không có điểm đã nộp, tiến độ học tập hay trải nghiệm cá nhân được tạo sẵn.
+3. Trong từng bài, dùng mục lục để đến phần tóm tắt, phân tích, hoạt động, từ vựng, reflection viết sẵn và nguồn.
 
 Nếu muốn xem bằng HTTP trong thư mục dự án:
 
@@ -93,11 +92,10 @@ Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở 
 | Book-6-2 | Keep/change/create và phần mở để tìm bước chuyển cảm xúc của chiếc bánh |
 | Book-7-2 | Timeline chuẩn bị/đón năm mới/ăn mừng và ý nghĩa các biểu tượng theo bài |
 
-Mỗi bài cũng có 4 từ vựng mở bằng click hoặc bàn phím. Có 3 câu quiz cho mỗi bài thông thường và 2 câu cho mỗi bài thiếu nguồn, tổng cộng 43 câu. Đáp án có giải thích riêng cho từng lựa chọn, kiểm tra chủ động và thử lại.
+Mỗi bài có 4 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **Your response**.
 
-## Nội dung còn cần học sinh bổ sung
+## Ghi chú về bộ bài đọc
 
-- **Reflection:** 15 ô trả lời đang để trống và ghi rõ “Student reflection — add your own response”. Không có tên học sinh, giáo viên, ngày đọc, điểm hay trải nghiệm cá nhân giả định.
 - **Book-2-1 và Book-3-1:** chỉ có phần mở đầu và ghi chú từ vựng trong tài liệu cung cấp. Hai trang mang nhãn **Excerpt — incomplete source**. Muốn phân tích toàn bài cần bổ sung phần thân bài; không suy ra nội dung thiếu từ glossary.
 - **Phân học kỳ:** tạm chia 8/7 theo thứ tự nguồn, chưa phải lịch phân công chính thức.
 - **Google Sites:** cần tạo trang, dán fragment, xem trước và xuất bản bằng tài khoản của bạn.
@@ -108,18 +106,17 @@ Tóm tắt và phân tích được viết lại từ 15 văn bản đã cung c�
 
 Các tuyên bố về chẩn đoán, luật và chính sách nằm trong bối cảnh ngày xuất bản của nguồn. Số liệu được ghi rõ phạm vi và người đưa ra; biểu đồ không tạo thêm tỷ lệ. Tết được trình bày như mô tả của tác giả năm 2012, không khái quát cho mọi gia đình hay lặp lại các chi tiết món ăn/truyền thuyết gây tranh luận như sự thật đã kiểm chứng.
 
-Reflection mặc định chỉ tồn tại trong trang đang mở. Nút **Save on this device** lưu vào localStorage với khóa riêng cho từng bài. Khi trình duyệt hoặc iframe không cho lưu, nội dung vẫn còn trong ô và trạng thái báo đúng giới hạn. **Select response to copy** chọn văn bản để sao chép thủ công, không phụ thuộc Clipboard API. Không thu thập thông tin, không analytics, không gửi câu trả lời đi đâu, không có tài khoản hoặc backend.
+Footer dùng chung có thông tin liên hệ, ghi chú về quyền tác giả, lối vào trang cá nhân và nút **Follow on GitHub** để theo dõi CrepMC.
 
 ## Chỉnh sửa và tạo lại
 
 Không chỉnh riêng `index.html` và `embed.txt`: chúng được sinh từ cùng một nguồn để giữ nội dung đồng nhất.
 
-- `tools/readings.mjs`: danh mục, tóm tắt, phân tích, từ vựng, quiz và reflection.
-- `tools/labs.mjs`: hoạt động theo từng bài, biểu đồ và phần giải thích.
-- `tools/art.mjs`: minh họa SVG gốc.
-- `tools/theme.css`: hệ thống giao diện; khi xuất, mọi selector được giới hạn trong root riêng.
-- `tools/runtime.js`: tìm kiếm, trạng thái hoạt động, quiz, lưu ghi chú; mọi truy vấn giới hạn trong root của trang.
-- `tools/build.mjs`: tạo 19 file HTML và 18 fragment từ cùng một nguồn.
+- Sửa nội dung bài đọc và reflection trong `tools/readings.mjs`. Hoạt động theo bài nằm trong `tools/labs.mjs`.
+- Sửa đầu trang trong `components/header.mjs` và chân trang trong `components/footer.mjs`. `components/layout.mjs` ghép chúng vào mỗi trang.
+- Danh mục dùng `components/library.mjs`. Các trang bài đọc dùng `components/reading-page.mjs`.
+- Giao diện và hành vi dùng chung nằm trong `components/theme.css` và `components/runtime.js`.
+- Chạy `tools/build.mjs` để tạo lại 19 file HTML và 18 fragment.
 
 ```powershell
 node tools/build.mjs
@@ -131,14 +128,13 @@ Build dùng Node.js, nhưng các trang kết quả không cần Node, package, f
 
 Chạy ngày **16/11/2026**, bằng Chromium từ Google Chrome cài trên máy. Kết quả chi tiết: `tools/test-results.json` và `tools/accessibility-results.json`.
 
-- **1.385 kiểm tra đạt**, gồm kiểm tra cú pháp, liên kết và nội dung của 18 cặp HTML/embed. Trang chủ ở gốc mở được khi offline, tìm được bài và chuyển trang qua đường dẫn dự án `/Reading-portfolio-12/` trên máy.
+- Đã kiểm tra cú pháp, liên kết và nội dung của 18 cặp HTML/embed. Trang chủ ở gốc mở được khi offline, tìm được bài và chuyển trang qua đường dẫn dự án `/Reading-portfolio-12/` trên máy.
 - **57 lượt kiểm tra bố cục** cho 19 trang ở chiều rộng 1440, 768 và 360px. Không phát hiện tràn ngang, lỗi JavaScript hoặc yêu cầu tải asset bên ngoài.
 - Kiểm tra tìm kiếm/bộ lọc kết hợp, kết quả rỗng, tìm Tết không dấu và hai trang học kỳ.
-- Kiểm tra tất cả quiz: đúng/sai/chưa trả lời/thử lại; mọi bộ từ vựng; mọi lựa chọn hoạt động, phân loại và thành phần riêng.
+- Kiểm tra 15 reflection, liên kết ở footer, các bộ từ vựng và các hoạt động tương tác của từng bài.
 - Mở đủ 18 trang bằng `file://`; kiểm tra chuyển trang qua đường dẫn chứa khoảng trắng.
-- Kiểm tra lưu/khôi phục reflection và chọn văn bản để copy.
-- Nhúng cả 18 fragment vào iframe sandbox có origin riêng; kiểm tra cả 15 quiz, chế độ lưu trữ bị từ chối và nội dung host không bị thay đổi.
-- Kiểm tra cả 18 trang khi tắt JavaScript: nội dung tóm tắt, giải thích, đáp án tham khảo và flashcard native vẫn dùng được.
+- Nhúng cả 18 fragment vào iframe sandbox để kiểm tra reflection, footer và trạng thái của trang chứa iframe.
+- Khi tắt JavaScript, tóm tắt, reflection, giải thích và thẻ từ vựng vẫn đọc được.
 - Kiểm tra điểm vào bằng bàn phím, skip link và reduced motion. Đã xem ảnh chụp desktop/tablet/mobile và trang đọc/hoạt động đại diện.
 - Quét axe theo WCAG 2.0/2.1 A/AA trên cả 19 trang, với **0 vi phạm tự động được báo**. Một số mục SVG và trang danh mục cần đánh giá thủ công.
 

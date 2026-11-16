@@ -1,16 +1,7 @@
-export const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const p = text => `<p>${esc(text)}</p>`;
-const details = (label, text) => `<details class="evidence-note"><summary>${esc(label)}</summary>${p(text)}</details>`;
-export function bars(rows, max, unit = '') {
-  return `<div class="bars">${rows.map(([label,value])=>`<div class="bar-row"><div class="bar-label"><span>${esc(label)}</span><strong>${value}${esc(unit)}</strong></div><div class="bar-track"><span style="width:${value/max*100}%"></span></div></div>`).join('')}</div>`;
-}
-function choices(id, tabs, intro='', cls='') {
-  return `${intro}<div class="explorer ${cls}" data-explorer="${id}"><div class="choice-strip enhanced-only" role="group" aria-label="Explore ${id}">${tabs.map(([title],i)=>`<button type="button" data-choice="${i}" aria-pressed="${i===0}">${esc(title)}</button>`).join('')}</div><div class="panels">${tabs.map(([title,body],i)=>`<article class="lab-panel" data-panel="${i}"><span class="eyebrow">Perspective ${String(i+1).padStart(2,'0')}</span><h3>${esc(title)}</h3>${body}</article>`).join('')}</div><p class="sr-only" data-explorer-status aria-live="polite"></p></div>`;
-}
-function sort(id, heading, options, rows) {
-  return `${p(heading)}<div data-sort="${id}"><div class="sort-list">${rows.map(([label,answer,why],i)=>`<div class="sort-row"><label for="${id}-${i}">${esc(label)}</label><select id="${id}-${i}" data-answer="${answer}" data-why="${esc(why)}"><option value="">Choose a category</option>${options.map((x,j)=>`<option value="${j}">${esc(x)}</option>`).join('')}</select><p class="sort-feedback" aria-live="polite"></p></div>`).join('')}</div><div class="action-row enhanced-only"><button type="button" class="solid" data-check-sort>Check the categories</button><button type="button" data-reset-sort>Try again</button></div><p class="feedback" data-sort-status aria-live="polite"></p></div>${details('Reference key & reasoning',rows.map(([label,answer,why])=>`${label}: ${options[answer]}. ${why}`).join(' '))}`;
-}
-const chartNote = text => `<p class="caption">${esc(text)}</p>`;
+import {bars, chartNote} from '../components/bar-chart.mjs';
+import {choices} from '../components/choice-panels.mjs';
+import {p, details} from '../components/disclosure.mjs';
+import {sort} from '../components/sorting-activity.mjs';
 
 export function lab(reading) {
   switch(reading.id) {
