@@ -283,7 +283,7 @@
     </figure>
   </header>
     <div class="reading-layout">
-      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-6-1-summary"><span>01</span>What I read</a><a href="#rp-book-6-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-6-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-6-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-6-1-reflection"><span>05</span>Your response</a><a href="#rp-book-6-1-source"><span>06</span>Source &amp; connections</a></nav>
+      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-6-1-summary"><span>01</span>What I read</a><a href="#rp-book-6-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-6-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-6-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-6-1-reflection"><span>05</span>My response</a><a href="#rp-book-6-1-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-6-1-summary" aria-labelledby="rp-book-6-1-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-6-1-summary-title">What I read</h2></div>
     <p class="summary-text">Brosbe examines proposals to restrict young people’s access to social media. The article first describes both valued connections and reported harms, then explains several approaches: age verification, parental consent, education and limits on platform design. It introduces objections about enforcement, parental authority and freedom of expression rather than treating regulation as an automatic solution. The final discussion of lobbying shows that companies have financial interests in the outcome. Through this progression, the author develops a central question about how to protect young users while preserving benefits and deciding who should hold responsibility.</p>
@@ -334,7 +334,7 @@
     <summary>lobbyist</summary><p>Someone paid to influence public policy for a group.</p><p class="example">A lobbyist argues for rules that favor a client’s interests.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-6-1-reflection" aria-labelledby="rp-book-6-1-reflection-title">
-    <div class="section-title"><span>05</span><h2 id="rp-book-6-1-reflection-title">Your response</h2></div>
+    <div class="section-title"><span>05</span><h2 id="rp-book-6-1-reflection-title">My response</h2></div>
     <div class="written-response"><p>I would start with limits on collecting and using young users’ data. Brosbe’s article describes social media as a place for connection and creativity as well as a source of risk. A design rule could preserve some of those uses, but enforcement might encourage companies to collect more information to verify ages. I would evaluate a rule by looking at the data a platform actually holds, how its recommendations change and whether young users can still find the communities they value.</p></div>
   </section><section class="reading-section" id="rp-book-6-1-source" aria-labelledby="rp-book-6-1-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-6-1-source-title">Source &amp; connections</h2></div>

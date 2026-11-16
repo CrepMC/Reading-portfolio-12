@@ -56,7 +56,7 @@ function readingContents(ctx, reading) {
     </div>`],
     ['vocabulary', 'Words to keep', `<p class="section-intro">Open a word to reveal its meaning and an original example. Each word appears in the supplied reading.</p>
       <div class="vocab-grid">${vocabulary}</div>`],
-    ['reflection', 'Your response', `<div class="written-response"><p>${esc(reading.reflection)}</p></div>`],
+    ['reflection', 'My response', `<div class="written-response"><p>${esc(reading.reflection)}</p></div>`],
     ['source', 'Source & connections', `<p class="source-copy">${esc(reading.source)}</p>
       <p class="source-copy">Summaries, analysis, examples and reflections are original study notes based on the supplied text.</p>
       <div class="related-links">${related}</div>`],

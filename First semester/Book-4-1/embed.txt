@@ -283,7 +283,7 @@
     </figure>
   </header>
     <div class="reading-layout">
-      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-4-1-summary"><span>01</span>What I read</a><a href="#rp-book-4-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-4-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-4-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-4-1-reflection"><span>05</span>Your response</a><a href="#rp-book-4-1-source"><span>06</span>Source &amp; connections</a></nav>
+      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-4-1-summary"><span>01</span>What I read</a><a href="#rp-book-4-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-4-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-4-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-4-1-reflection"><span>05</span>My response</a><a href="#rp-book-4-1-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-4-1-summary" aria-labelledby="rp-book-4-1-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-4-1-summary-title">What I read</h2></div>
     <p class="summary-text">Kamenetz investigates disagreement about the language of technology addiction while taking harmful patterns of use seriously. Experts differ over diagnosis and treatment, yet the article suggests that interference with relationships, school and everyday life matters more than hours alone. It considers counseling, habit changes and the difficulty of avoiding technology that students need. The focus then widens to companies whose advertising models reward keeping users engaged. By including both individual responses and changes to platform incentives, Kamenetz presents screen use as a complex relationship shaped by people and the systems around them.</p>
@@ -332,7 +332,7 @@
     <summary>ubiquitous</summary><p>Present almost everywhere.</p><p class="example">Ubiquitous devices make total avoidance difficult.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-4-1-reflection" aria-labelledby="rp-book-4-1-reflection-title">
-    <div class="section-title"><span>05</span><h2 id="rp-book-4-1-reflection-title">Your response</h2></div>
+    <div class="section-title"><span>05</span><h2 id="rp-book-4-1-reflection-title">My response</h2></div>
     <div class="written-response"><p>Kamenetz’s discussion of how screen use can interfere with relationships made me think about who controls the conditions of screen use. Families can set a quiet time at night, and that might address interrupted sleep. If a platform makes money from keeping people scrolling, it has a reason to keep inviting them back. In that case, limits on interruptions and changes to defaults could help more people. I would judge their effect by looking at which everyday activities screen use begins to displace.</p></div>
   </section><section class="reading-section" id="rp-book-4-1-source" aria-labelledby="rp-book-4-1-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-4-1-source-title">Source &amp; connections</h2></div>

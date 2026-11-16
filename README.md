@@ -92,7 +92,7 @@ Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở 
 | Book-6-2 | Keep/change/create và phần mở để tìm bước chuyển cảm xúc của chiếc bánh |
 | Book-7-2 | Timeline chuẩn bị/đón năm mới/ăn mừng và ý nghĩa các biểu tượng theo bài |
 
-Mỗi bài có 4 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **Your response**.
+Mỗi bài có 4 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **My response**.
 
 ## Ghi chú về bộ bài đọc
 

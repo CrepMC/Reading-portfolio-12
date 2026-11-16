@@ -283,7 +283,7 @@
     </figure>
   </header>
     <div class="reading-layout">
-      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-8-1-summary"><span>01</span>What I read</a><a href="#rp-book-8-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-8-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-8-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-8-1-reflection"><span>05</span>Your response</a><a href="#rp-book-8-1-source"><span>06</span>Source &amp; connections</a></nav>
+      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-8-1-summary"><span>01</span>What I read</a><a href="#rp-book-8-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-8-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-8-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-8-1-reflection"><span>05</span>My response</a><a href="#rp-book-8-1-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-8-1-summary" aria-labelledby="rp-book-8-1-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-8-1-summary-title">What I read</h2></div>
     <p class="summary-text">McBirney explains why some communities have limited access to fresh food. Distance matters, but its effects depend on transport, household income, prices and the economics of running a store. Urban and rural areas face different combinations of these barriers. The article surveys responses such as community gardens, transport assistance, safer routes and support for existing shops. Its final section complicates the earlier problem-and-solution structure: expanding store access does not necessarily change eating habits. Poverty remains a broader concern, so improving food access requires attention to affordability and people’s circumstances as well as geography.</p>
@@ -322,7 +322,7 @@
     <summary>incentive</summary><p>Something offered to encourage an action.</p><p class="example">An incentive might help a local store stock fresh produce.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-8-1-reflection" aria-labelledby="rp-book-8-1-reflection-title">
-    <div class="section-title"><span>05</span><h2 id="rp-book-8-1-reflection-title">Your response</h2></div>
+    <div class="section-title"><span>05</span><h2 id="rp-book-8-1-reflection-title">My response</h2></div>
     <div class="written-response"><p>For a rural town with a distant supermarket, I would start with a regular shuttle that stops at places residents can reach on foot. McBirney’s account shows how distance and transportation combine to shape the choices available to a household. I would ask residents about the timetable before setting it and track who uses it. The price of groceries would still matter, especially for households that can reach a larger shop but have a limited weekly budget.</p></div>
   </section><section class="reading-section" id="rp-book-8-1-source" aria-labelledby="rp-book-8-1-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-8-1-source-title">Source &amp; connections</h2></div>

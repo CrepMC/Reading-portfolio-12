@@ -283,7 +283,7 @@
     </figure>
   </header>
     <div class="reading-layout">
-      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-4-2-summary"><span>01</span>What I read</a><a href="#rp-book-4-2-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-4-2-lab"><span>03</span>Explore the idea</a><a href="#rp-book-4-2-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-4-2-reflection"><span>05</span>Your response</a><a href="#rp-book-4-2-source"><span>06</span>Source &amp; connections</a></nav>
+      <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-4-2-summary"><span>01</span>What I read</a><a href="#rp-book-4-2-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-4-2-lab"><span>03</span>Explore the idea</a><a href="#rp-book-4-2-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-4-2-reflection"><span>05</span>My response</a><a href="#rp-book-4-2-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-4-2-summary" aria-labelledby="rp-book-4-2-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-4-2-summary-title">What I read</h2></div>
     <p class="summary-text">Twain’s travelers enter heavy snow trusting Ollendorff’s supposed instinct for direction. Fresh tracks seem to confirm their progress until they discover that they have been following their own circular route. They later follow a stagecoach, but its tracks disappear and rows of buried shrubs imitate roads. Their attempt to make a fire fails spectacularly, and the horses wander away. Exaggeration, ironic reversals and misplaced confidence create humor, while cold, darkness and the disappearance of another traveler keep real danger present. The excerpt repeatedly exposes the gap between what the group believes and what its observations actually establish.</p>
@@ -345,7 +345,7 @@
     <summary>consternation</summary><p>Dismay or alarm at something unexpected.</p><p class="example">The loss of the road fills the travelers with consternation.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-4-2-reflection" aria-labelledby="rp-book-4-2-reflection-title">
-    <div class="section-title"><span>05</span><h2 id="rp-book-4-2-reflection-title">Your response</h2></div>
+    <div class="section-title"><span>05</span><h2 id="rp-book-4-2-reflection-title">My response</h2></div>
     <div class="written-response"><p>The travelers read fresh tracks as evidence that someone else is ahead. That is believable at first, which makes the discovery that they have been following their own tracks funnier. Looking back, the fading landmarks and snow-covered road give them very little evidence about where they are. I like how Twain lets the same tracks support two stories. The difference comes from whether the travelers are willing to test what they assumed when they first saw them.</p></div>
   </section><section class="reading-section" id="rp-book-4-2-source" aria-labelledby="rp-book-4-2-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-4-2-source-title">Source &amp; connections</h2></div>
