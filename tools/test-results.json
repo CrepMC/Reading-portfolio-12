@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-16T11:50:21.447Z",
+  "checks": [
+    "18 documents + 18 fragments: syntax, semantics, IDs, relative links, anchors, UTF-8, inline assets and content parity",
+    "Root index.html opens offline and at all three widths, with catalog search and navigation under the configured base path",
+    "Home combined search/semester/theme filters, empty state, diacritic search, both semester searches",
+    "All 15 quizzes: correct, incorrect, unanswered and retry; every vocabulary deck; all custom activity selectors, sorters and unique controls",
+    "All 18 pages open with file://; relative file navigation; reflection save/reload and selection fallback",
+    "All 18 fragments in isolated sandbox=allow-scripts iframes; all 15 embed quizzes and storage-denied fallback; host preserved",
+    "All 18 pages with JavaScript disabled; summaries, static explanations, study keys and native flashcards available",
+    "Keyboard entry/skip link, reduced motion, no uncaught JavaScript errors or external asset requests"
+  ],
+  "failures": [],
+  "pageCount": 18,
+  "viewports": [
+    1440,
+    768,
+    360
+  ],
+  "browser": "Chromium (installed Google Chrome)",
+  "actualGoogleSites": false,
+  "assertions": 1385,
+  "passed": true
+}

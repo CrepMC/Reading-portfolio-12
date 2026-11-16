@@ -1,0 +1,139 @@
+{
+  "checkedAt": "2026-11-16T11:50:21.729Z",
+  "standard": "Automated axe WCAG 2.0/2.1 A and AA checks",
+  "pages": [
+    {
+      "path": "index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "path": "Home/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "path": "First semester/index.html",
+      "passedRules": 22,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "path": "Second semester/index.html",
+      "passedRules": 22,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
+    },
+    {
+      "path": "First semester/Book-1-1/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-2-1/index.html",
+      "passedRules": 27,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-3-1/index.html",
+      "passedRules": 27,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-4-1/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-5-1/index.html",
+      "passedRules": 28,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-6-1/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-7-1/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "First semester/Book-8-1/index.html",
+      "passedRules": 29,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "Second semester/Book-1-2/index.html",
+      "passedRules": 27,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "Second semester/Book-2-2/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "Second semester/Book-3-2/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "Second semester/Book-4-2/index.html",
+      "passedRules": 27,
+      "violations": 0,
+      "incompleteRules": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "Second semester/Book-5-2/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "Second semester/Book-6-2/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    },
+    {
+      "path": "Second semester/Book-7-2/index.html",
+      "passedRules": 26,
+      "violations": 0,
+      "incompleteRules": []
+    }
+  ],
+  "violations": []
+}
