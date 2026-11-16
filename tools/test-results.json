@@ -12,11 +12,7 @@
   ],
   "failures": [],
   "pageCount": 18,
-  "viewports": [
-    1440,
-    768,
-    360
-  ],
+  "viewports": [1440, 768, 360],
   "browser": "Chromium (installed Google Chrome)",
   "actualGoogleSites": false,
   "assertions": 1598,

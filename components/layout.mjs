@@ -1,17 +1,20 @@
-import fs from 'node:fs';
-import {footer, footerStyles} from './footer.mjs';
-import {header} from './header.mjs';
-import {esc} from './markup.mjs';
+import fs from "node:fs";
+import { footer, footerStyles } from "./footer.mjs";
+import { header } from "./header.mjs";
+import { esc } from "./markup.mjs";
 
-const theme = fs.readFileSync(new URL('./theme.css', import.meta.url), 'utf8');
-const runtime = fs.readFileSync(new URL('./runtime.js', import.meta.url), 'utf8');
+const theme = fs.readFileSync(new URL("./theme.css", import.meta.url), "utf8");
+const runtime = fs.readFileSync(
+  new URL("./runtime.js", import.meta.url),
+  "utf8",
+);
 
 export function renderPage(page, embed) {
-  const root = `rp-${page.id.toLowerCase().replaceAll(' ', '-')}`;
-  const ctx = {...page, root, embed};
-  const style = `${theme}\n${footerStyles}`.replaceAll('__ROOT__', `#${root}`);
-  const script = runtime.replaceAll('__ROOT_ID__', root);
-  const accent = page.reading ? ` style="--accent:${page.reading.color}"` : '';
+  const root = `rp-${page.id.toLowerCase().replaceAll(" ", "-")}`;
+  const ctx = { ...page, root, embed };
+  const style = `${theme}\n${footerStyles}`.replaceAll("__ROOT__", `#${root}`);
+  const script = runtime.replaceAll("__ROOT_ID__", root);
+  const accent = page.reading ? ` style="--accent:${page.reading.color}"` : "";
   const content = `<div id="${root}" data-page="${esc(page.id)}"${accent}>
   <div class="shell">
     ${header(ctx)}
@@ -20,9 +23,12 @@ export function renderPage(page, embed) {
   </div>
 </div>`;
 
-  if (embed) return `<style>\n${style}\n</style>\n${content}\n<script>\n${script}</script>\n`;
+  if (embed)
+    return `<style>\n${style}\n</style>\n${content}\n<script>\n${script}</script>\n`;
 
-  const description = page.reading?.question || 'An interactive Grade 12 reading portfolio with 15 readings, two semester collections and written reflections.';
+  const description =
+    page.reading?.question ||
+    "An interactive Grade 12 reading portfolio with 15 readings, two semester collections and written reflections.";
   return `<!doctype html>
 <html lang="en">
 <head>

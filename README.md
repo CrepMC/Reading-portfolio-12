@@ -51,46 +51,46 @@ Bản này **chưa được đăng hoặc thử trên Google Sites thực tế**
 
 Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở độc lập và **`embed.txt`** để dán vào Google Sites.
 
-| Trang Google Sites | Thư mục | Nội dung |
-|---|---|---|
-| Home | `Home/` | Bìa, hai bộ sưu tập, tìm kiếm và bộ lọc toàn bộ 15 bài |
-| First semester | `First semester/` | 8 bài, tìm kiếm và so sánh liên văn bản |
-| First semester → Book-1-1 | `First semester/Book-1-1/` | Playing Teen Sports May Protect From Some Damages of Childhood Trauma |
-| First semester → Book-2-1 | `First semester/Book-2-1/` | The Pros and Cons of Youth Sports Aren't Only Physical |
-| First semester → Book-3-1 | `First semester/Book-3-1/` | Training the Goat |
-| First semester → Book-4-1 | `First semester/Book-4-1/` | Screen Addiction Among Teens: Is There Such A Thing? |
-| First semester → Book-5-1 | `First semester/Book-5-1/` | How TikTok Changed Our Musical World |
-| First semester → Book-6-1 | `First semester/Book-6-1/` | Age Limits on Your Favorite Apps? |
-| First semester → Book-7-1 | `First semester/Book-7-1/` | Genetically Modified Salmon: Food or 'Frankenfish'? |
-| First semester → Book-8-1 | `First semester/Book-8-1/` | Food Deserts |
-| Second semester | `Second semester/` | 7 bài, tìm kiếm và so sánh liên văn bản |
-| Second semester → Book-1-2 | `Second semester/Book-1-2/` | Want Out of Jail? First You Have to Take a Fast Food Job |
-| Second semester → Book-2-2 | `Second semester/Book-2-2/` | Electric scooters on collision course with pedestrians and lawmakers |
-| Second semester → Book-3-2 | `Second semester/Book-3-2/` | Crowd |
-| Second semester → Book-4-2 | `Second semester/Book-4-2/` | Excerpt from "Roughing It": Lost in the Snow |
-| Second semester → Book-5-2 | `Second semester/Book-5-2/` | Why there's no place like home for the holidays |
-| Second semester → Book-6-2 | `Second semester/Book-6-2/` | Making Up Thanksgiving as She Went Along |
-| Second semester → Book-7-2 | `Second semester/Book-7-2/` | Tết: Celebrating the New Year |
+| Trang Google Sites         | Thư mục                     | Nội dung                                                              |
+| -------------------------- | --------------------------- | --------------------------------------------------------------------- |
+| Home                       | `Home/`                     | Bìa, hai bộ sưu tập, tìm kiếm và bộ lọc toàn bộ 15 bài                |
+| First semester             | `First semester/`           | 8 bài, tìm kiếm và so sánh liên văn bản                               |
+| First semester → Book-1-1  | `First semester/Book-1-1/`  | Playing Teen Sports May Protect From Some Damages of Childhood Trauma |
+| First semester → Book-2-1  | `First semester/Book-2-1/`  | The Pros and Cons of Youth Sports Aren't Only Physical                |
+| First semester → Book-3-1  | `First semester/Book-3-1/`  | Training the Goat                                                     |
+| First semester → Book-4-1  | `First semester/Book-4-1/`  | Screen Addiction Among Teens: Is There Such A Thing?                  |
+| First semester → Book-5-1  | `First semester/Book-5-1/`  | How TikTok Changed Our Musical World                                  |
+| First semester → Book-6-1  | `First semester/Book-6-1/`  | Age Limits on Your Favorite Apps?                                     |
+| First semester → Book-7-1  | `First semester/Book-7-1/`  | Genetically Modified Salmon: Food or 'Frankenfish'?                   |
+| First semester → Book-8-1  | `First semester/Book-8-1/`  | Food Deserts                                                          |
+| Second semester            | `Second semester/`          | 7 bài, tìm kiếm và so sánh liên văn bản                               |
+| Second semester → Book-1-2 | `Second semester/Book-1-2/` | Want Out of Jail? First You Have to Take a Fast Food Job              |
+| Second semester → Book-2-2 | `Second semester/Book-2-2/` | Electric scooters on collision course with pedestrians and lawmakers  |
+| Second semester → Book-3-2 | `Second semester/Book-3-2/` | Crowd                                                                 |
+| Second semester → Book-4-2 | `Second semester/Book-4-2/` | Excerpt from "Roughing It": Lost in the Snow                          |
+| Second semester → Book-5-2 | `Second semester/Book-5-2/` | Why there's no place like home for the holidays                       |
+| Second semester → Book-6-2 | `Second semester/Book-6-2/` | Making Up Thanksgiving as She Went Along                              |
+| Second semester → Book-7-2 | `Second semester/Book-7-2/` | Tết: Celebrating the New Year                                         |
 
 ## Hoạt động riêng cho từng bài
 
-| Bài | Hoạt động |
-|---|---|
+| Bài      | Hoạt động                                                                             |
+| -------- | ------------------------------------------------------------------------------------- |
 | Book-1-1 | Timeline nghiên cứu, biểu đồ tỷ lệ tham gia 1:2, giải thích giới hạn quan hệ nhân quả |
-| Book-2-1 | Phân loại lợi ích thể chất, rủi ro thể chất, chủ đề tâm lý chưa có bằng chứng |
-| Book-3-1 | Phân loại nhiệm vụ trainer trên sân và ngoài sân |
-| Book-4-1 | Ba tình huống giả định về bối cảnh và ảnh hưởng của việc dùng màn hình |
-| Book-5-1 | Hai quy trình tìm nghệ sĩ và ba góc nhìn về cơ hội/áp lực |
-| Book-6-1 | Ma trận lợi ích và câu hỏi phản biện cho bốn lựa chọn chính sách |
-| Book-7-1 | So sánh 18/36 tháng, bốn hướng tranh luận và mốc 2014/2015 |
-| Book-8-1 | Chọn bối cảnh đô thị/nông thôn và rào cản để tìm giải pháp tương ứng |
-| Book-1-2 | Timeline vụ Husband và biểu đồ tổng thu nhập 25%/75% có giới hạn diễn giải |
-| Book-2-2 | So sánh tốc độ và lựa chọn không gian di chuyển |
-| Book-3-2 | Bốn chặng trong hành trình của Alex và phản ứng tương ứng |
-| Book-4-2 | Sơ đồ vòng lặp minh họa và sắp xếp sự kiện bằng lựa chọn bàn phím |
-| Book-5-2 | Biểu đồ tương tác bốn nhóm câu trả lời Pew 2008 |
-| Book-6-2 | Keep/change/create và phần mở để tìm bước chuyển cảm xúc của chiếc bánh |
-| Book-7-2 | Timeline chuẩn bị/đón năm mới/ăn mừng và ý nghĩa các biểu tượng theo bài |
+| Book-2-1 | Phân loại lợi ích thể chất, rủi ro thể chất, chủ đề tâm lý chưa có bằng chứng         |
+| Book-3-1 | Phân loại nhiệm vụ trainer trên sân và ngoài sân                                      |
+| Book-4-1 | Ba tình huống giả định về bối cảnh và ảnh hưởng của việc dùng màn hình                |
+| Book-5-1 | Hai quy trình tìm nghệ sĩ và ba góc nhìn về cơ hội/áp lực                             |
+| Book-6-1 | Ma trận lợi ích và câu hỏi phản biện cho bốn lựa chọn chính sách                      |
+| Book-7-1 | So sánh 18/36 tháng, bốn hướng tranh luận và mốc 2014/2015                            |
+| Book-8-1 | Chọn bối cảnh đô thị/nông thôn và rào cản để tìm giải pháp tương ứng                  |
+| Book-1-2 | Timeline vụ Husband và biểu đồ tổng thu nhập 25%/75% có giới hạn diễn giải            |
+| Book-2-2 | So sánh tốc độ và lựa chọn không gian di chuyển                                       |
+| Book-3-2 | Bốn chặng trong hành trình của Alex và phản ứng tương ứng                             |
+| Book-4-2 | Sơ đồ vòng lặp minh họa và sắp xếp sự kiện bằng lựa chọn bàn phím                     |
+| Book-5-2 | Biểu đồ tương tác bốn nhóm câu trả lời Pew 2008                                       |
+| Book-6-2 | Keep/change/create và phần mở để tìm bước chuyển cảm xúc của chiếc bánh               |
+| Book-7-2 | Timeline chuẩn bị/đón năm mới/ăn mừng và ý nghĩa các biểu tượng theo bài              |
 
 Mỗi bài có 4 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **My response**.
 

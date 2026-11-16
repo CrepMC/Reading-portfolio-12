@@ -1,13 +1,14 @@
-import {route} from './navigation.mjs';
+import { route } from "./navigation.mjs";
 
-const homepage = 'https://crepmc.github.io/';
-const profile = 'https://github.com/CrepMC';
-const contactEmail = 'nhan069069@stu.vinschool.edu.vn';
+const homepage = "https://crepmc.github.io/";
+const profile = "https://github.com/CrepMC";
+const contactEmail = "nhan069069@stu.vinschool.edu.vn";
 
 export function footer(ctx) {
-  const projectLink = ctx.path === 'index.html' || ctx.path === 'Home/index.html'
-    ? '<a href="#about-project">About this project</a>'
-    : route(ctx, 'index.html#about-project', 'About this project');
+  const projectLink =
+    ctx.path === "index.html" || ctx.path === "Home/index.html"
+      ? '<a href="#about-project">About this project</a>'
+      : route(ctx, "index.html#about-project", "About this project");
 
   return `<footer class="site-footer">
     <div class="footer-grid">
