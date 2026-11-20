@@ -1759,9 +1759,8 @@ html:has(#rp-book-2-1) {
     <div>
       <span class="eyebrow">READING 02 / 15 &nbsp; · &nbsp; Sports &amp; wellbeing</span>
       <h1>The Pros and Cons of Youth Sports Aren&#39;t Only Physical</h1>
-      <p class="byline">Marika Lindholm &nbsp; / &nbsp; 2017 &nbsp; / &nbsp; Commentary · opening excerpt</p>
-      <p class="hero-question">What can an opening establish—and what can it only promise?</p>
-      <div class="source-alert"><strong>Excerpt — incomplete source</strong>Analysis is based on the supplied opening and vocabulary notes.</div>
+      <p class="byline">Marika Lindholm &nbsp; / &nbsp; 2017 &nbsp; / &nbsp; Commentary</p>
+      <p class="hero-question">What helps youth sports build confidence without making winning define a child’s worth?</p>
     </div>
     <figure class="hero-visual">
       <div class="visual-header"><span>BETWEEN THE LINES</span><span>02</span></div>
@@ -1773,34 +1772,50 @@ html:has(#rp-book-2-1) {
       <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-2-1-summary"><span>01</span>What I read</a><a href="#rp-book-2-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-2-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-2-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-2-1-reflection"><span>05</span>My response</a><a href="#rp-book-2-1-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-2-1-summary" aria-labelledby="rp-book-2-1-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-2-1-summary-title">What I read</h2></div>
-    <p class="summary-text">Lindholm’s opening presents youth sports as a balance of physical benefits and physical risks. Sport can encourage movement and health, but injuries also deserve attention. She then identifies a less-discussed question: the psychological benefits and risks of participation. The supplied text stops at this transition. It establishes the article’s direction but does not provide the psychological findings or examples promised by the introduction.</p>
-      <aside class="reading-focus"><span class="eyebrow">READING FOCUS</span><p>Look for psychological benefits and risks. The opening announces this topic, but the supplied excerpt does not develop it. The glossary is not evidence of the missing argument.</p></aside>
+    <p class="summary-text">Lindholm argues that the effects of youth sports reach into confidence, relationships and habits. Drawing on her teaching, research and parenting, she presents six psychological risks alongside six benefits. Pressure from adults, bullying coaches and an identity tied to winning can harm young athletes. Supportive coaching and practice can build resilience, collaboration, a work ethic and time-management skills. The same activity can strengthen self-esteem through improvement or undermine it when results determine a child’s sense of worth. Her advice asks parents to notice the conditions surrounding participation and reconsider an approach when enjoyment gives way to harm.</p>
+      <aside class="reading-focus"><span class="eyebrow">READING FOCUS</span><p>Track how psychological effects depend on the sporting environment. Risks include performance-based self-worth, bullying, unrealistic scholarship expectations, strained parent relationships, pressure and superiority. Benefits include handling feedback, efficacy, a work ethic, positive body image, resilience and self-management.</p></aside>
   </section><section class="reading-section" id="rp-book-2-1-evidence" aria-labelledby="rp-book-2-1-evidence-title">
     <div class="section-title"><span>02</span><h2 id="rp-book-2-1-evidence-title">Evidence &amp; analysis</h2></div>
     <article class="evidence-item">
-    <span class="label-word">CLAIM</span><h3>The opening uses contrast to establish a broader question.</h3>
-    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>The available paragraph places the benefits of movement beside examples of knee, shoulder and head injuries.</p>
-    <p class="explain"><span class="label-word">WHY IT MATTERS</span>This familiar physical debate prepares readers to consider psychological effects. It does not yet explain those effects.</p>
+    <span class="label-word">CLAIM</span><h3>Self-esteem depends on how success is understood.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>Psychological Risks, item 1, warns against tying identity to results. Psychological Benefits, item 2, describes confidence gained through practice and improvement.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>Placing these points together shows how judgments about performance can shape its emotional effect. Growth gives a child a different basis for confidence from constant demands to win.</p>
   </article><article class="evidence-item">
-    <span class="label-word">CLAIM</span><h3>A stated purpose is not a finding.</h3>
-    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>The final sentence turns toward psychological risks and benefits.</p>
-    <p class="explain"><span class="label-word">WHY IT MATTERS</span>This transition identifies what the author intends to explore. The missing body is needed before assessing her conclusions.</p>
+    <span class="label-word">CLAIM</span><h3>Adults help create the conditions for learning.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>The risks section criticizes humiliating coaches and over-invested parents. The benefits section describes learning to accept feedback and cooperate.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>The contrast gives parents something concrete to evaluate in a team’s culture. It also explains why correction delivered constructively can support learning.</p>
+  </article><article class="evidence-item">
+    <span class="label-word">CLAIM</span><h3>The paired lists support a conditional argument.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>Six numbered risks are followed by six numbered benefits, then advice to reevaluate participation if it becomes harmful.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>The structure invites readers to weigh the conditions of participation. Direct advice and examples from teaching and parenting make the commentary practical, while its conclusion depends on how a child is doing.</p>
   </article>
   </section><section class="reading-section" id="rp-book-2-1-lab" aria-labelledby="rp-book-2-1-lab-title">
     <div class="section-title"><span>03</span><h2 id="rp-book-2-1-lab-title">Explore the idea</h2></div>
     <div class="lab">
-      <span class="eyebrow">Classify the opening</span><h3>Evidence, or a question still open?</h3><p>Sort only what the available opening supports. A promised topic is different from a demonstrated finding.</p><div data-sort="physical-psychological">
+      <span class="eyebrow">Benefits &amp; risks</span><h3>What shapes the psychological outcome?</h3><p>Classify each example using Lindholm’s two lists of psychological effects. Consider the role of adults, feedback and expectations in each outcome.</p><div data-sort="sports-psychology">
     <div class="sort-list"><div class="sort-row">
-    <label for="physical-psychological-0">More movement through participation</label>
-    <select id="physical-psychological-0" data-answer="0" data-why="The opening directly links sport with movement and health."><option value="">Choose a category</option><option value="0">Physical benefit</option><option value="1">Physical risk</option><option value="2">Psychological topic — not yet developed</option></select>
+    <label for="sports-psychology-0">Learning to use constructive feedback and work with teammates</label>
+    <select id="sports-psychology-0" data-answer="0" data-why="Benefits, item 1, links accepting criticism and collaborating with skills useful in adulthood."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
     <p class="sort-feedback" aria-live="polite"></p>
   </div><div class="sort-row">
-    <label for="physical-psychological-1">Knee, shoulder and head injuries</label>
-    <select id="physical-psychological-1" data-answer="1" data-why="These are the physical concerns the paragraph names."><option value="">Choose a category</option><option value="0">Physical benefit</option><option value="1">Physical risk</option><option value="2">Psychological topic — not yet developed</option></select>
+    <label for="sports-psychology-1">Feeling that personal worth depends on winning</label>
+    <select id="sports-psychology-1" data-answer="1" data-why="Risks, item 1, warns that tying identity to performance can damage self-esteem after a loss."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
     <p class="sort-feedback" aria-live="polite"></p>
   </div><div class="sort-row">
-    <label for="physical-psychological-2">The balance of psychological effects</label>
-    <select id="physical-psychological-2" data-answer="2" data-why="The opening announces this topic without supplying the body’s evidence."><option value="">Choose a category</option><option value="0">Physical benefit</option><option value="1">Physical risk</option><option value="2">Psychological topic — not yet developed</option></select>
+    <label for="sports-psychology-2">Organizing schoolwork around practice and competition</label>
+    <select id="sports-psychology-2" data-answer="0" data-why="Benefits, item 6, describes self-regulation, organization and time management."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
+    <p class="sort-feedback" aria-live="polite"></p>
+  </div><div class="sort-row">
+    <label for="sports-psychology-3">Parents making affection depend on athletic results</label>
+    <select id="sports-psychology-3" data-answer="1" data-why="Risks, item 4, describes the strain created by over-invested parents."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
+    <p class="sort-feedback" aria-live="polite"></p>
+  </div><div class="sort-row">
+    <label for="sports-psychology-4">Developing confidence by improving a skill through practice</label>
+    <select id="sports-psychology-4" data-answer="0" data-why="Benefits, item 2, connects effort and improvement with efficacy and self-esteem."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
+    <p class="sort-feedback" aria-live="polite"></p>
+  </div><div class="sort-row">
+    <label for="sports-psychology-5">Assuming sporting ability guarantees a college scholarship</label>
+    <select id="sports-psychology-5" data-answer="1" data-why="Risks, item 3, cautions against relying on that expectation and neglecting other interests."><option value="">Choose a category</option><option value="0">Psychological benefit</option><option value="1">Psychological risk</option></select>
     <p class="sort-feedback" aria-live="polite"></p>
   </div></div>
     <div class="action-row enhanced-only">
@@ -1808,27 +1823,31 @@ html:has(#rp-book-2-1) {
       <button type="button" data-reset-sort>Try again</button>
     </div>
     <p class="feedback" data-sort-status aria-live="polite"></p>
-  </div><details class="evidence-note"><summary>Reference key &amp; reasoning</summary><p>More movement through participation: Physical benefit. The opening directly links sport with movement and health. Knee, shoulder and head injuries: Physical risk. These are the physical concerns the paragraph names. The balance of psychological effects: Psychological topic — not yet developed. The opening announces this topic without supplying the body’s evidence.</p></details>
+  </div><details class="evidence-note"><summary>Reference key &amp; reasoning</summary><p>Learning to use constructive feedback and work with teammates: Psychological benefit. Benefits, item 1, links accepting criticism and collaborating with skills useful in adulthood. Feeling that personal worth depends on winning: Psychological risk. Risks, item 1, warns that tying identity to performance can damage self-esteem after a loss. Organizing schoolwork around practice and competition: Psychological benefit. Benefits, item 6, describes self-regulation, organization and time management. Parents making affection depend on athletic results: Psychological risk. Risks, item 4, describes the strain created by over-invested parents. Developing confidence by improving a skill through practice: Psychological benefit. Benefits, item 2, connects effort and improvement with efficacy and self-esteem. Assuming sporting ability guarantees a college scholarship: Psychological risk. Risks, item 3, cautions against relying on that expectation and neglecting other interests.</p></details><details class="evidence-note"><summary>Why does self-esteem appear on both sides?</summary><p>Lindholm distinguishes confidence built through learning from self-worth made dependent on results. The conditions around participation influence its psychological effects. Her closing advice asks parents to pay attention to enjoyment and harm.</p></details>
       <noscript><p class="caption">Interactive controls need JavaScript. All explanations and reference keys remain available on this page.</p></noscript>
     </div>
   </section><section class="reading-section" id="rp-book-2-1-vocabulary" aria-labelledby="rp-book-2-1-vocabulary-title">
     <div class="section-title"><span>04</span><h2 id="rp-book-2-1-vocabulary-title">Words to keep</h2></div>
     <p class="section-intro">Open a word to reveal its meaning and an original example. Each word appears in the supplied reading.</p>
       <div class="vocab-grid"><details class="vocab-card">
-    <summary>backdrop</summary><p>The context surrounding an event or issue.</p><p class="example">Childhood inactivity provides a backdrop for the debate.</p>
+    <summary>demoralize</summary><p>To weaken someone’s confidence or spirit.</p><p class="example">Public humiliation can demoralize a player who is still learning.</p>
   </details><details class="vocab-card">
-    <summary>participation</summary><p>Taking part in an activity.</p><p class="example">Participation in a team creates opportunities for movement.</p>
+    <summary>efficacy</summary><p>The ability to produce a desired result.</p><p class="example">Improving a skill through practice can build a young athlete’s sense of efficacy.</p>
   </details><details class="vocab-card">
-    <summary>epidemic</summary><p>A widespread occurrence of a problem.</p><p class="example">The author uses epidemic to emphasize the scale of sports injuries.</p>
+    <summary>resilience</summary><p>The capacity to recover and adapt after setbacks.</p><p class="example">Learning to face a defeat can help develop resilience.</p>
   </details><details class="vocab-card">
-    <summary>psychological</summary><p>Related to the mind and emotions.</p><p class="example">The opening raises a psychological question without yet answering it.</p>
+    <summary>self-regulation</summary><p>Managing one’s behavior and choices to meet a goal.</p><p class="example">Balancing practice with schoolwork requires self-regulation.</p>
+  </details><details class="vocab-card">
+    <summary>humility</summary><p>Recognizing one’s limitations without assuming superiority over others.</p><p class="example">Humility helps a successful player respect teammates and opponents.</p>
+  </details><details class="vocab-card">
+    <summary>adulation</summary><p>Excessive admiration or praise.</p><p class="example">Constant adulation can make it harder for an athlete to accept criticism.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-2-1-reflection" aria-labelledby="rp-book-2-1-reflection-title">
     <div class="section-title"><span>05</span><h2 id="rp-book-2-1-reflection-title">My response</h2></div>
-    <div class="written-response"><p>The opening makes me pay attention to how Lindholm sets up her argument. She starts with a familiar trade-off between exercise and injury, then asks readers to consider what sports might do to a young person’s confidence or well-being. That shift tells me what the rest of the article is likely to examine. To evaluate her position, I would need the missing examples and evidence, including whether the psychological outcomes vary with the athlete’s circumstances.</p></div>
+    <div class="written-response"><p>I would judge a youth team partly by how the adults respond after a loss. Lindholm connects growth with learning to use feedback, yet she also describes coaches who humiliate players and parents whose affection seems tied to results. A coach who explains a mistake and gives a player a chance to work on it makes improvement feel possible. I find the paired points about self-esteem especially convincing because they show how the meaning attached to a result can affect confidence. Enjoyment, effort and relationships would all matter in deciding whether a team is helping its players.</p></div>
   </section><section class="reading-section" id="rp-book-2-1-source" aria-labelledby="rp-book-2-1-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-2-1-source-title">Source &amp; connections</h2></div>
-    <p class="source-copy">Marika Lindholm, Psychology Today, 2017. © 2017 Psychology Today. Used by permission in the supplied compilation; all rights reserved. Only the opening and glossary were supplied.</p>
+    <p class="source-copy">Marika Lindholm, Psychology Today, 2017. © 2017 Psychology Today. Used by permission of Marika Lindholm in the supplied source; all rights reserved. Study notes are based on the expanded text supplied on November 20, 2026.</p>
       <p class="source-copy">Summaries, analysis, examples and reflections are original study notes based on the supplied text.</p>
       <div class="related-links"><span class="route-text " >Book-1-1 · The power of a team ↗</span><span class="route-text " >Book-3-1 · Behind the athlete ↗</span></div>
   </section></div>

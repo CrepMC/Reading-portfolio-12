@@ -1,30 +1,42 @@
 {
-  "checkedAt": "2026-11-16T12:47:42.406Z",
+  "checkedAt": "2026-11-20T14:59:24.099Z",
   "standard": "Automated axe WCAG 2.0/2.1 A and AA checks",
   "pages": [
     {
       "path": "index.html",
       "passedRules": 28,
       "violations": 0,
-      "incompleteRules": ["color-contrast", "label-content-name-mismatch"]
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
     },
     {
       "path": "Home/index.html",
       "passedRules": 28,
       "violations": 0,
-      "incompleteRules": ["color-contrast", "label-content-name-mismatch"]
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
     },
     {
       "path": "First semester/index.html",
       "passedRules": 24,
       "violations": 0,
-      "incompleteRules": ["color-contrast", "label-content-name-mismatch"]
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
     },
     {
       "path": "Second semester/index.html",
       "passedRules": 24,
       "violations": 0,
-      "incompleteRules": ["color-contrast", "label-content-name-mismatch"]
+      "incompleteRules": [
+        "color-contrast",
+        "label-content-name-mismatch"
+      ]
     },
     {
       "path": "First semester/Book-1-1/index.html",
@@ -72,7 +84,9 @@
       "path": "First semester/Book-8-1/index.html",
       "passedRules": 28,
       "violations": 0,
-      "incompleteRules": ["color-contrast"]
+      "incompleteRules": [
+        "color-contrast"
+      ]
     },
     {
       "path": "Second semester/Book-1-2/index.html",
@@ -90,13 +104,17 @@
       "path": "Second semester/Book-3-2/index.html",
       "passedRules": 26,
       "violations": 0,
-      "incompleteRules": ["color-contrast"]
+      "incompleteRules": [
+        "color-contrast"
+      ]
     },
     {
       "path": "Second semester/Book-4-2/index.html",
       "passedRules": 28,
       "violations": 0,
-      "incompleteRules": ["color-contrast"]
+      "incompleteRules": [
+        "color-contrast"
+      ]
     },
     {
       "path": "Second semester/Book-5-2/index.html",

@@ -45,44 +45,61 @@ export function lab(reading) {
       };
     case "Book-2-1":
       return {
-        title: "Evidence, or a question still open?",
-        type: "Classify the opening",
+        title: "What shapes the psychological outcome?",
+        type: "Benefits & risks",
         html: sort(
-          "physical-psychological",
-          "Sort only what the available opening supports. A promised topic is different from a demonstrated finding.",
+          "sports-psychology",
+          "Classify each example using Lindholm’s two lists of psychological effects. Consider the role of adults, feedback and expectations in each outcome.",
           [
-            "Physical benefit",
-            "Physical risk",
-            "Psychological topic — not yet developed",
+            "Psychological benefit",
+            "Psychological risk",
           ],
           [
             [
-              "More movement through participation",
+              "Learning to use constructive feedback and work with teammates",
               0,
-              "The opening directly links sport with movement and health.",
+              "Benefits, item 1, links accepting criticism and collaborating with skills useful in adulthood.",
             ],
             [
-              "Knee, shoulder and head injuries",
+              "Feeling that personal worth depends on winning",
               1,
-              "These are the physical concerns the paragraph names.",
+              "Risks, item 1, warns that tying identity to performance can damage self-esteem after a loss.",
             ],
             [
-              "The balance of psychological effects",
-              2,
-              "The opening announces this topic without supplying the body’s evidence.",
+              "Organizing schoolwork around practice and competition",
+              0,
+              "Benefits, item 6, describes self-regulation, organization and time management.",
+            ],
+            [
+              "Parents making affection depend on athletic results",
+              1,
+              "Risks, item 4, describes the strain created by over-invested parents.",
+            ],
+            [
+              "Developing confidence by improving a skill through practice",
+              0,
+              "Benefits, item 2, connects effort and improvement with efficacy and self-esteem.",
+            ],
+            [
+              "Assuming sporting ability guarantees a college scholarship",
+              1,
+              "Risks, item 3, cautions against relying on that expectation and neglecting other interests.",
             ],
           ],
+        ) + details(
+          "Why does self-esteem appear on both sides?",
+          "Lindholm distinguishes confidence built through learning from self-worth made dependent on results. The conditions around participation influence its psychological effects. Her closing advice asks parents to pay attention to enjoyment and harm.",
         ),
       };
     case "Book-3-1":
       return {
         title: "A trainer’s work, on and off the field",
-        type: "Task sorting",
+        type: "Task sorting & contrasting perspectives",
         html:
           '<div class="field-key" aria-hidden="true"><span>ON THE FIELD<br>Immediate response</span><span>OFF THE FIELD<br>Recovery & development</span></div>' +
           sort(
             "trainer-tasks",
-            "Assign each task to its context in the supplied excerpt.",
+            "Assign each task to the context described in the opening of the profile, then explore the reasons behind opinions of Guerrero.",
             ["On-field care", "Off-field care"],
             [
               [
@@ -107,9 +124,25 @@ export function lab(reading) {
               ],
             ],
           ) +
-          chartNote(
-            "The detailed methods used by Guerrero and the reasons for criticism are absent from the supplied text.",
-          ),
+          '<h3>What informs each opinion?</h3>' +
+          choices("Guerrero perspectives", [
+            [
+              "Brady’s support",
+              p("Brady credits Guerrero with helping him return after a 2008 ACL injury. The profile also describes his extensive involvement in meals, scheduling and daily preparation. These details explain the athlete’s trust and the scope of their working relationship."),
+            ],
+            [
+              "Scientific criticism",
+              p("Some medical professionals question the evidence for the pliability approach and the results promised by his methods and products. Their objections raise a question about what evidence supports applying those claims beyond one successful athlete."),
+            ],
+            [
+              "Training & qualifications",
+              p("The article contrasts typical athletic trainers’ study of anatomy, physiology and nutrition with Guerrero’s education in traditional Chinese medicine. Critics question his preparation for the role. The profile uses this contrast to explain one source of disagreement."),
+            ],
+            [
+              "Prevention & recovery",
+              p("Guerrero’s program combines nutrition, hydration, mental preparation, exercise and massage, with an emphasis on preventing injuries. The article describes disagreements about how he approaches recovery. These are reported practices and viewpoints in the 2022 profile."),
+            ],
+          ]),
       };
     case "Book-4-1":
       return {

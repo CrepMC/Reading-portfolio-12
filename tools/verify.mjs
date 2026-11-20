@@ -52,7 +52,7 @@ const rootIds = [];
 const externalFooterLinks = [
   "https://crepmc.github.io/",
   "https://github.com/CrepMC",
-  "mailto:ducnhan02022009@gmail.com",
+  "mailto:nhan069069@stu.vinschool.edu.vn",
 ];
 
 for (const file of pages) {

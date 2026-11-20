@@ -1758,10 +1758,9 @@ html:has(#rp-book-3-1) {
     <header class="reading-hero">
     <div>
       <span class="eyebrow">READING 03 / 15 &nbsp; · &nbsp; Sports &amp; wellbeing</span>
-      <h1>Training the Goat</h1>
-      <p class="byline">Jacqueline Pratt-Tuke &nbsp; / &nbsp; 2022 &nbsp; / &nbsp; Profile · opening excerpt</p>
-      <p class="hero-question">How does the opening frame a trainer’s influence and reputation?</p>
-      <div class="source-alert"><strong>Excerpt — incomplete source</strong>Analysis is based on the supplied opening and vocabulary notes.</div>
+      <h1>Training the GOAT</h1>
+      <p class="byline">Jacqueline Pratt-Tuke &nbsp; / &nbsp; 2022 &nbsp; / &nbsp; Profile</p>
+      <p class="hero-question">How should a reader weigh an athlete’s trust alongside criticism of a trainer’s methods?</p>
     </div>
     <figure class="hero-visual">
       <div class="visual-header"><span>BETWEEN THE LINES</span><span>03</span></div>
@@ -1773,23 +1772,27 @@ html:has(#rp-book-3-1) {
       <nav class="contents" aria-label="On this reading page"><span class="eyebrow">CONTENTS</span><a href="#rp-book-3-1-summary"><span>01</span>What I read</a><a href="#rp-book-3-1-evidence"><span>02</span>Evidence &amp; analysis</a><a href="#rp-book-3-1-lab"><span>03</span>Explore the idea</a><a href="#rp-book-3-1-vocabulary"><span>04</span>Words to keep</a><a href="#rp-book-3-1-reflection"><span>05</span>My response</a><a href="#rp-book-3-1-source"><span>06</span>Source &amp; connections</a></nav>
       <div class="reading-body"><section class="reading-section" id="rp-book-3-1-summary" aria-labelledby="rp-book-3-1-summary-title">
     <div class="section-title"><span>01</span><h2 id="rp-book-3-1-summary-title">What I read</h2></div>
-    <p class="summary-text">Pratt-Tuke introduces Tom Brady’s sporting success and his gratitude toward trainer Alex Guerrero. The excerpt explains that athletic trainers assess injuries during games and help athletes recover and perform away from the field. It also states that Guerrero’s unconventional approaches attract praise and criticism. The supplied opening ends before explaining those approaches or the reasons for either reaction. A fair response can describe his role and divided reputation, but cannot judge the effectiveness of his specific methods.</p>
-      <aside class="reading-focus"><span class="eyebrow">READING FOCUS</span><p>Track opinions about Guerrero. Brady credits him for his career, while the narrator reports both praise and criticism. Detailed supporting perspectives are missing.</p></aside>
+    <p class="summary-text">Pratt-Tuke profiles Alex Guerrero through his work with Tom Brady and the debate around his training approach. She traces his interest in traditional Chinese medicine and his emphasis on flexible muscles, injury prevention and overall well-being. Nutrition, hydration, exercise and mental preparation all feature in his program. Some medical professionals question the scientific support for his methods, his qualifications and the scope of his claims. Brady’s loyalty and their TB12 venture provide a contrasting account of his influence. The profile lets readers compare personal endorsement with professional criticism while examining how a trainer’s reputation is formed.</p>
+      <aside class="reading-focus"><span class="eyebrow">READING FOCUS</span><p>Compare the reasons behind opinions of Guerrero. Brady credits him with recovery and continued performance, while critics question evidence for pliability, claims about results and his qualifications. The magazine account emphasizes how extensively Guerrero supports Brady’s daily preparation.</p></aside>
   </section><section class="reading-section" id="rp-book-3-1-evidence" aria-labelledby="rp-book-3-1-evidence-title">
     <div class="section-title"><span>02</span><h2 id="rp-book-3-1-evidence-title">Evidence &amp; analysis</h2></div>
     <article class="evidence-item">
-    <span class="label-word">CLAIM</span><h3>The opening transfers attention from celebrity to support.</h3>
-    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>Brady’s achievements are followed by the question of whom he credits.</p>
-    <p class="explain"><span class="label-word">WHY IT MATTERS</span>This question creates interest in the less-visible work behind athletic success.</p>
+    <span class="label-word">CLAIM</span><h3>The biography explains the origins of Guerrero’s approach.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>In Early Influences, the author links his study of Chinese medicine and observations of runners’ hamstring injuries with his interest in prevention and pliability.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>This sequence makes his methods understandable as a response to experiences. The question of how well they work remains part of the later debate.</p>
   </article><article class="evidence-item">
-    <span class="label-word">CLAIM</span><h3>A divided reputation creates a question, not a verdict.</h3>
-    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>The available ending describes Guerrero’s methods as unconventional and reports mixed reactions.</p>
-    <p class="explain"><span class="label-word">WHY IT MATTERS</span>Without the missing body, neither praise nor criticism can be evaluated in detail.</p>
+    <span class="label-word">CLAIM</span><h3>Supporters and critics rely on different grounds for judgment.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>Credited and Critiqued sets concerns about scientific support and qualifications beside Brady’s account of recovery after his 2008 ACL injury.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>The contrast asks readers to consider the reach of each claim. Brady’s experience explains his trust, while the professional objections raise questions about evidence and wider application.</p>
+  </article><article class="evidence-item">
+    <span class="label-word">CLAIM</span><h3>Detailed routine gives substance to a broad endorsement.</h3>
+    <p><span class="label-word">EVIDENCE · PARAPHRASED</span>The magazine account describes Guerrero helping with meals, planning Brady’s training and working with him frequently during the season.</p>
+    <p class="explain"><span class="label-word">WHY IT MATTERS</span>These details show the scope of the relationship behind the body-coach label. They help explain Guerrero’s influence on preparation without isolating which part accounts for performance.</p>
   </article>
   </section><section class="reading-section" id="rp-book-3-1-lab" aria-labelledby="rp-book-3-1-lab-title">
     <div class="section-title"><span>03</span><h2 id="rp-book-3-1-lab-title">Explore the idea</h2></div>
     <div class="lab">
-      <span class="eyebrow">Task sorting</span><h3>A trainer’s work, on and off the field</h3><div class="field-key" aria-hidden="true"><span>ON THE FIELD<br>Immediate response</span><span>OFF THE FIELD<br>Recovery & development</span></div><p>Assign each task to its context in the supplied excerpt.</p><div data-sort="trainer-tasks">
+      <span class="eyebrow">Task sorting &amp; contrasting perspectives</span><h3>A trainer’s work, on and off the field</h3><div class="field-key" aria-hidden="true"><span>ON THE FIELD<br>Immediate response</span><span>OFF THE FIELD<br>Recovery & development</span></div><p>Assign each task to the context described in the opening of the profile, then explore the reasons behind opinions of Guerrero.</p><div data-sort="trainer-tasks">
     <div class="sort-list"><div class="sort-row">
     <label for="trainer-tasks-0">Quickly assess an injury during play</label>
     <select id="trainer-tasks-0" data-answer="0" data-why="The paragraph describes immediate assessment on the field."><option value="">Choose a category</option><option value="0">On-field care</option><option value="1">Off-field care</option></select>
@@ -1812,27 +1815,43 @@ html:has(#rp-book-3-1) {
       <button type="button" data-reset-sort>Try again</button>
     </div>
     <p class="feedback" data-sort-status aria-live="polite"></p>
-  </div><details class="evidence-note"><summary>Reference key &amp; reasoning</summary><p>Quickly assess an injury during play: On-field care. The paragraph describes immediate assessment on the field. Attend to an injury under pressure: On-field care. Staying calm supports an immediate response during play. Guide an athlete through recovery: Off-field care. Recovery is described as ongoing work away from the field. Help an athlete reach maximum physical performance: Off-field care. The excerpt associates this with off-field training.</p></details><p class="caption">The detailed methods used by Guerrero and the reasons for criticism are absent from the supplied text.</p>
+  </div><details class="evidence-note"><summary>Reference key &amp; reasoning</summary><p>Quickly assess an injury during play: On-field care. The paragraph describes immediate assessment on the field. Attend to an injury under pressure: On-field care. Staying calm supports an immediate response during play. Guide an athlete through recovery: Off-field care. Recovery is described as ongoing work away from the field. Help an athlete reach maximum physical performance: Off-field care. The excerpt associates this with off-field training.</p></details><h3>What informs each opinion?</h3><div class="explorer" data-explorer="Guerrero perspectives">
+    <div class="choice-strip enhanced-only" role="group" aria-label="Explore Guerrero perspectives"><button type="button" data-choice="0" aria-pressed="true">Brady’s support</button><button type="button" data-choice="1" aria-pressed="false">Scientific criticism</button><button type="button" data-choice="2" aria-pressed="false">Training &amp; qualifications</button><button type="button" data-choice="3" aria-pressed="false">Prevention &amp; recovery</button></div>
+    <div class="panels"><article class="lab-panel" data-panel="0">
+    <span class="eyebrow">Perspective 01</span><h3>Brady’s support</h3><p>Brady credits Guerrero with helping him return after a 2008 ACL injury. The profile also describes his extensive involvement in meals, scheduling and daily preparation. These details explain the athlete’s trust and the scope of their working relationship.</p>
+  </article><article class="lab-panel" data-panel="1">
+    <span class="eyebrow">Perspective 02</span><h3>Scientific criticism</h3><p>Some medical professionals question the evidence for the pliability approach and the results promised by his methods and products. Their objections raise a question about what evidence supports applying those claims beyond one successful athlete.</p>
+  </article><article class="lab-panel" data-panel="2">
+    <span class="eyebrow">Perspective 03</span><h3>Training &amp; qualifications</h3><p>The article contrasts typical athletic trainers’ study of anatomy, physiology and nutrition with Guerrero’s education in traditional Chinese medicine. Critics question his preparation for the role. The profile uses this contrast to explain one source of disagreement.</p>
+  </article><article class="lab-panel" data-panel="3">
+    <span class="eyebrow">Perspective 04</span><h3>Prevention &amp; recovery</h3><p>Guerrero’s program combines nutrition, hydration, mental preparation, exercise and massage, with an emphasis on preventing injuries. The article describes disagreements about how he approaches recovery. These are reported practices and viewpoints in the 2022 profile.</p>
+  </article></div>
+    <p class="sr-only" data-explorer-status aria-live="polite"></p>
+  </div>
       <noscript><p class="caption">Interactive controls need JavaScript. All explanations and reference keys remain available on this page.</p></noscript>
     </div>
   </section><section class="reading-section" id="rp-book-3-1-vocabulary" aria-labelledby="rp-book-3-1-vocabulary-title">
     <div class="section-title"><span>04</span><h2 id="rp-book-3-1-vocabulary-title">Words to keep</h2></div>
     <p class="section-intro">Open a word to reveal its meaning and an original example. Each word appears in the supplied reading.</p>
       <div class="vocab-grid"><details class="vocab-card">
-    <summary>assess</summary><p>To examine and judge a situation.</p><p class="example">A trainer must assess an injury before responding.</p>
+    <summary>pliability</summary><p>The quality of being flexible or able to bend.</p><p class="example">The profile describes pliability as central to Guerrero’s approach.</p>
   </details><details class="vocab-card">
-    <summary>optimistic</summary><p>Expecting a positive outcome.</p><p class="example">An optimistic trainer can encourage an athlete during recovery.</p>
+    <summary>holistic</summary><p>Considering a whole system and the connections between its parts.</p><p class="example">A holistic view of preparation considers nutrition and mental readiness alongside exercise.</p>
   </details><details class="vocab-card">
     <summary>unconventional</summary><p>Different from usual or accepted practice.</p><p class="example">An unconventional approach needs evidence before it can be evaluated.</p>
   </details><details class="vocab-card">
-    <summary>critiqued</summary><p>Examined and evaluated critically.</p><p class="example">The excerpt says the methods were critiqued but does not explain why.</p>
+    <summary>rehabilitation</summary><p>A process of restoring abilities after injury or illness.</p><p class="example">The profile traces Guerrero’s early work to a rehabilitation center.</p>
+  </details><details class="vocab-card">
+    <summary>physiology</summary><p>The study of how living organisms and their parts function.</p><p class="example">Physiology is one area of study mentioned in the account of trainers’ education.</p>
+  </details><details class="vocab-card">
+    <summary>proactively</summary><p>By taking action in advance of an expected need or problem.</p><p class="example">The TB12 account emphasizes preparing proactively to reduce injuries.</p>
   </details></div>
   </section><section class="reading-section" id="rp-book-3-1-reflection" aria-labelledby="rp-book-3-1-reflection-title">
     <div class="section-title"><span>05</span><h2 id="rp-book-3-1-reflection-title">My response</h2></div>
-    <div class="written-response"><p>Brady’s endorsement explains why Guerrero is worth looking into. I would put more weight on a comparison of athletes with similar injuries who followed different recovery plans. Recovery time would be useful, and so would the number who returned to play without getting hurt again. I would also want to know whether coaches, trainers and athletes assessed progress in the same way. The supplied opening establishes a divided opinion about Guerrero and leaves those comparisons open.</p></div>
+    <div class="written-response"><p>The details of Guerrero’s daily work helped me understand why Brady places so much trust in him. His involvement reaches into meals, planning and repeated preparation. I would still examine the critics’ questions about evidence when judging the claims made for the method. A successful athlete receives many kinds of support, so I would want to know which outcomes can be linked to a particular practice and how other athletes respond. The profile makes me more attentive to the reasons people give for their confidence in an expert.</p></div>
   </section><section class="reading-section" id="rp-book-3-1-source" aria-labelledby="rp-book-3-1-source-title">
     <div class="section-title"><span>06</span><h2 id="rp-book-3-1-source-title">Source &amp; connections</h2></div>
-    <p class="source-copy">Jacqueline Pratt-Tuke, CommonLit, 2022. © 2022 CommonLit, Inc.; CC BY-NC-SA 4.0. Only the opening and vocabulary notes were supplied. Sporting records are presented in the source’s 2022 context.</p>
+    <p class="source-copy">Jacqueline Pratt-Tuke, CommonLit, 2022. © 2022 CommonLit, Inc.; CC BY-NC-SA 4.0. Study notes are based on the expanded text supplied on November 20, 2026. Sporting records and accounts of training reflect the 2022 profile.</p>
       <p class="source-copy">Summaries, analysis, examples and reflections are original study notes based on the supplied text.</p>
       <div class="related-links"><span class="route-text " >Book-1-1 · The power of a team ↗</span><span class="route-text " >Book-2-1 · Beyond the scoreboard ↗</span></div>
   </section></div>

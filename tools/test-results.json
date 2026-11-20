@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T12:47:42.035Z",
+  "checkedAt": "2026-11-20T14:58:44.580Z",
   "checks": [
     "18 documents + 18 fragments: syntax, semantics, IDs, relative links, anchors, UTF-8, inline assets and content parity",
     "Root index.html opens offline and at all three widths, with catalog search and navigation under the configured base path",
@@ -12,9 +12,13 @@
   ],
   "failures": [],
   "pageCount": 18,
-  "viewports": [1440, 768, 360],
+  "viewports": [
+    1440,
+    768,
+    360
+  ],
   "browser": "Chromium (installed Google Chrome)",
   "actualGoogleSites": false,
-  "assertions": 1598,
+  "assertions": 1612,
   "passed": true
 }

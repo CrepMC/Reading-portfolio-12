@@ -57,7 +57,7 @@ Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở 
 | First semester             | `First semester/`           | 8 bài, tìm kiếm và so sánh liên văn bản                               |
 | First semester → Book-1-1  | `First semester/Book-1-1/`  | Playing Teen Sports May Protect From Some Damages of Childhood Trauma |
 | First semester → Book-2-1  | `First semester/Book-2-1/`  | The Pros and Cons of Youth Sports Aren't Only Physical                |
-| First semester → Book-3-1  | `First semester/Book-3-1/`  | Training the Goat                                                     |
+| First semester → Book-3-1  | `First semester/Book-3-1/`  | Training the GOAT                                                     |
 | First semester → Book-4-1  | `First semester/Book-4-1/`  | Screen Addiction Among Teens: Is There Such A Thing?                  |
 | First semester → Book-5-1  | `First semester/Book-5-1/`  | How TikTok Changed Our Musical World                                  |
 | First semester → Book-6-1  | `First semester/Book-6-1/`  | Age Limits on Your Favorite Apps?                                     |
@@ -77,8 +77,8 @@ Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở 
 | Bài      | Hoạt động                                                                             |
 | -------- | ------------------------------------------------------------------------------------- |
 | Book-1-1 | Timeline nghiên cứu, biểu đồ tỷ lệ tham gia 1:2, giải thích giới hạn quan hệ nhân quả |
-| Book-2-1 | Phân loại lợi ích thể chất, rủi ro thể chất, chủ đề tâm lý chưa có bằng chứng         |
-| Book-3-1 | Phân loại nhiệm vụ trainer trên sân và ngoài sân                                      |
+| Book-2-1 | Phân loại lợi ích và rủi ro tâm lý, giải thích hai cách thể thao ảnh hưởng đến sự tự tin |
+| Book-3-1 | Phân loại nhiệm vụ trainer và khám phá các quan điểm về phương pháp, bằng chứng, bằng cấp |
 | Book-4-1 | Ba tình huống giả định về bối cảnh và ảnh hưởng của việc dùng màn hình                |
 | Book-5-1 | Hai quy trình tìm nghệ sĩ và ba góc nhìn về cơ hội/áp lực                             |
 | Book-6-1 | Ma trận lợi ích và câu hỏi phản biện cho bốn lựa chọn chính sách                      |
@@ -92,11 +92,11 @@ Mỗi thư mục dưới đây có đúng hai file: **`index.html`** để mở 
 | Book-6-2 | Keep/change/create và phần mở để tìm bước chuyển cảm xúc của chiếc bánh               |
 | Book-7-2 | Timeline chuẩn bị/đón năm mới/ăn mừng và ý nghĩa các biểu tượng theo bài              |
 
-Mỗi bài có 4 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **My response**.
+Mỗi bài có 4–6 mục từ vựng mở bằng click hoặc bàn phím và một đoạn reflection tiếng Anh trong mục **My response**.
 
 ## Ghi chú về bộ bài đọc
 
-- **Book-2-1 và Book-3-1:** chỉ có phần mở đầu và ghi chú từ vựng trong tài liệu cung cấp. Hai trang mang nhãn **Excerpt — incomplete source**. Muốn phân tích toàn bài cần bổ sung phần thân bài; không suy ra nội dung thiếu từ glossary.
+- **Book-2-1 và Book-3-1** đã được cập nhật từ hai bản đầy đủ do bạn cung cấp ngày 20/11/2026. Tóm tắt, phân tích, từ vựng, reflection và hoạt động đều dùng nội dung mở rộng.
 - **Phân học kỳ:** tạm chia 8/7 theo thứ tự nguồn, chưa phải lịch phân công chính thức.
 - **Google Sites:** cần tạo trang, dán fragment, xem trước và xuất bản bằng tài khoản của bạn.
 
@@ -126,7 +126,7 @@ Build dùng Node.js, nhưng các trang kết quả không cần Node, package, f
 
 ## Kiểm thử đã thực hiện
 
-Chạy ngày **16/11/2026**, bằng Chromium từ Google Chrome cài trên máy. Kết quả chi tiết: `tools/test-results.json` và `tools/accessibility-results.json`.
+Chạy lại ngày **20/11/2026**, bằng Chromium từ Google Chrome cài trên máy. Bộ kiểm tra chức năng đạt **1.612 kiểm tra** sau khi bổ sung hai bài đầy đủ. Kết quả chi tiết nằm trong `tools/test-results.json` và `tools/accessibility-results.json`.
 
 - Đã kiểm tra cú pháp, liên kết và nội dung của 18 cặp HTML/embed. Trang chủ ở gốc mở được khi offline, tìm được bài và chuyển trang qua đường dẫn dự án `/Reading-portfolio-12/` trên máy.
 - **57 lượt kiểm tra bố cục** cho 19 trang ở chiều rộng 1440, 768 và 360px. Không phát hiện tràn ngang, lỗi JavaScript hoặc yêu cầu tải asset bên ngoài.
