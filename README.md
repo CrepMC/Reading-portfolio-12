@@ -116,6 +116,7 @@ Không chỉnh riêng `index.html` và `embed.txt`: chúng được sinh từ c�
 - Sửa đầu trang trong `components/header.mjs` và chân trang trong `components/footer.mjs`. `components/layout.mjs` ghép chúng vào mỗi trang.
 - Danh mục dùng `components/library.mjs`. Các trang bài đọc dùng `components/reading-page.mjs`.
 - Giao diện và hành vi dùng chung nằm trong `components/theme.css` và `components/runtime.js`.
+- `components/disclosure.mjs` quản lý các phần Expand/Collapse. Hiệu ứng mở và đóng kéo dài 280ms, áp dụng cho flashcard, phần giải thích và so sánh ở trang học kỳ. Chế độ giảm chuyển động mở và đóng ngay lập tức.
 - Chạy `tools/build.mjs` để tạo lại 19 file HTML và 18 fragment.
 
 ```powershell
@@ -126,7 +127,7 @@ Build dùng Node.js, nhưng các trang kết quả không cần Node, package, f
 
 ## Kiểm thử đã thực hiện
 
-Chạy lại ngày **20/11/2026**, bằng Chromium từ Google Chrome cài trên máy. Bộ kiểm tra chức năng đạt **1.612 kiểm tra** sau khi bổ sung hai bài đầy đủ. Kết quả chi tiết nằm trong `tools/test-results.json` và `tools/accessibility-results.json`.
+Chạy lại ngày **20/11/2026**, bằng Chromium từ Google Chrome cài trên máy. Bộ kiểm tra chức năng đạt **1.624 kiểm tra**, bao gồm hiệu ứng mở/đóng, bấm liên tục, thao tác bàn phím, đổi kích thước màn hình và chế độ giảm chuyển động. Kết quả chi tiết nằm trong `tools/test-results.json` và `tools/accessibility-results.json`.
 
 - Đã kiểm tra cú pháp, liên kết và nội dung của 18 cặp HTML/embed. Trang chủ ở gốc mở được khi offline, tìm được bài và chuyển trang qua đường dẫn dự án `/Reading-portfolio-12/` trên máy.
 - **57 lượt kiểm tra bố cục** cho 19 trang ở chiều rộng 1440, 768 và 360px. Không phát hiện tràn ngang, lỗi JavaScript hoặc yêu cầu tải asset bên ngoài.

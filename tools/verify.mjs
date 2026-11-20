@@ -350,6 +350,7 @@ for (const r of readings) {
     `${r.id}: vocabulary opens`,
   );
   await card.locator("summary").click();
+  await page.waitForFunction(() => !document.querySelector(".vocab-card[data-disclosure-animating]"));
   check(
     (await card.getAttribute("open")) === null,
     `${r.id}: vocabulary closes`,
@@ -421,6 +422,72 @@ for (const r of readings) {
 results.checks.push(
   "All 15 written responses, shared footers, vocabulary decks and existing interactive learning activities",
 );
+
+// Animation regressions: reversals must finish in the last requested state.
+await page.goto(`${base}/First%20semester/Book-1-1/index.html`);
+const animatedCard = page.locator(".vocab-card").first();
+for (const direction of ["open", "close"]) {
+  const motion = await animatedCard.evaluate(async (element) => {
+    const heights = [element.getBoundingClientRect().height];
+    element.querySelector("summary").click();
+    const started = performance.now();
+    do {
+      await new Promise(requestAnimationFrame);
+      heights.push(element.getBoundingClientRect().height);
+    } while (element.hasAttribute("data-disclosure-animating") && performance.now() - started < 1500);
+    return {
+      heights,
+      open: element.open,
+      height: element.style.height,
+      animating: element.hasAttribute("data-disclosure-animating"),
+    };
+  });
+  const distinctHeights = new Set(motion.heights.map(height => Math.round(height)));
+  check(distinctHeights.size > 3, `Disclosure: ${direction} has intermediate animation frames`);
+  check(motion.open === (direction === "open"), `Disclosure: ${direction} finishes in its requested state`);
+  check(!motion.height && !motion.animating, `Disclosure: ${direction} restores natural height`);
+}
+
+const reversed = await animatedCard.evaluate(async (element) => {
+  const summary = element.querySelector("summary");
+  const frame = () => new Promise(requestAnimationFrame);
+  summary.click();
+  await frame();
+  await frame();
+  summary.click();
+  await frame();
+  summary.click();
+  const started = performance.now();
+  while (element.hasAttribute("data-disclosure-animating") && performance.now() - started < 1500) await frame();
+  return { open: element.open, height: element.style.height, expanded: summary.getAttribute("aria-expanded") };
+});
+check(reversed.open && reversed.expanded === "true" && !reversed.height, "Disclosure: rapid open/close/open finishes expanded");
+await animatedCard.locator("summary").focus();
+await page.keyboard.press("Space");
+await page.waitForFunction(() => !document.querySelector("[data-disclosure-animating]"));
+check(await animatedCard.getAttribute("open") === null, "Disclosure: Space collapses with the keyboard");
+await page.keyboard.press("Enter");
+await page.waitForFunction(() => !document.querySelector("[data-disclosure-animating]"));
+check(await animatedCard.getAttribute("open") !== null, "Disclosure: Enter expands with the keyboard");
+await animatedCard.locator("summary").click();
+await page.emulateMedia({ reducedMotion: "reduce" });
+await page.waitForFunction(() => !document.querySelector("[data-disclosure-animating]"));
+check(await animatedCard.getAttribute("open") === null, "Disclosure: enabling reduced motion settles an active collapse");
+const reduced = await animatedCard.evaluate(element => {
+  element.querySelector("summary").click();
+  return { open: element.open, animations: element.getAnimations().length, height: element.style.height };
+});
+check(reduced.open && reduced.animations === 0 && !reduced.height, "Disclosure: reduced motion opens immediately");
+await page.emulateMedia({ reducedMotion: "no-preference" });
+await animatedCard.locator("summary").click();
+await page.setViewportSize({ width: 360, height: 1000 });
+await page.waitForFunction(() => !document.querySelector("[data-disclosure-animating]"));
+await animatedCard.locator("summary").click();
+await page.setViewportSize({ width: 768, height: 1000 });
+await page.waitForFunction(() => !document.querySelector("[data-disclosure-animating]"));
+check(await animatedCard.evaluate(element => element.open && !element.style.height && element.scrollHeight <= element.clientHeight + 1), "Disclosure: resize during opening leaves content unclipped");
+await page.setViewportSize({ width: 1440, height: 1000 });
+results.checks.push("Expand/collapse animation frames, fast reversals, keyboard activation, resizing and reduced motion");
 console.log(
   "All reading interactions checked. Testing file access and embeds.",
 );

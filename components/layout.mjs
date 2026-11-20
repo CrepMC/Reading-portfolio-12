@@ -2,6 +2,7 @@ import fs from "node:fs";
 import { footer, footerStyles } from "./footer.mjs";
 import { header } from "./header.mjs";
 import { esc } from "./markup.mjs";
+import { disclosureStyles, enhanceDisclosures } from "./disclosure.mjs";
 
 const theme = fs.readFileSync(new URL("./theme.css", import.meta.url), "utf8");
 const runtime = fs.readFileSync(
@@ -12,8 +13,8 @@ const runtime = fs.readFileSync(
 export function renderPage(page, embed) {
   const root = `rp-${page.id.toLowerCase().replaceAll(" ", "-")}`;
   const ctx = { ...page, root, embed };
-  const style = `${theme}\n${footerStyles}`.replaceAll("__ROOT__", `#${root}`);
-  const script = runtime.replaceAll("__ROOT_ID__", root);
+  const style = `${theme}\n${footerStyles}\n${disclosureStyles}`.replaceAll("__ROOT__", `#${root}`);
+  const script = `${runtime.replaceAll("__ROOT_ID__", root)}\n(${enhanceDisclosures.toString()})(document.getElementById("${root}"));\n`;
   const accent = page.reading ? ` style="--accent:${page.reading.color}"` : "";
   const content = `<div id="${root}" data-page="${esc(page.id)}"${accent}>
   <div class="shell">

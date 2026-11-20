@@ -1,10 +1,11 @@
 {
-  "checkedAt": "2026-11-20T14:58:44.580Z",
+  "checkedAt": "2026-11-20T15:22:35.662Z",
   "checks": [
     "18 documents + 18 fragments: syntax, semantics, IDs, relative links, anchors, UTF-8, inline assets and content parity",
     "Root index.html opens offline and at all three widths, with catalog search and navigation under the configured base path",
     "Home combined search/semester/theme filters, empty state, diacritic search, both semester searches",
     "All 15 written responses, shared footers, vocabulary decks and existing interactive learning activities",
+    "Expand/collapse animation frames, fast reversals, keyboard activation, resizing and reduced motion",
     "All pages open with file:// and support relative file navigation",
     "All 18 fragments in isolated sandbox iframes, including written responses and footer links",
     "All 18 pages with JavaScript disabled; summaries, static explanations, study keys and native flashcards available",
@@ -19,6 +20,6 @@
   ],
   "browser": "Chromium (installed Google Chrome)",
   "actualGoogleSites": false,
-  "assertions": 1612,
+  "assertions": 1624,
   "passed": true
 }
